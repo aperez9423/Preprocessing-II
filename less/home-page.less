@@ -1,3 +1,18 @@
+.introduction {
+  border-bottom: 2px dashed @navigation-border;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
 .home {
 
   .content-section {
@@ -5,18 +20,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile {
+      order: 1;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        order: 2;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        text-align: center;
+        order: 3;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -33,6 +69,14 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+        text-align: center;
+        order: 3;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 
@@ -40,8 +84,18 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
     img {
       border-radius: 10px;
+      
+      @media @mobile {
+        width: 96%;
+      }
     }
   }
 
@@ -51,9 +105,38 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
     }
   }
-}// home
+}
+
+button {
+  background-color: @button-bg;
+  width: 80%;
+  font-size: 1.6rem;
+  color: @white;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: .2rem solid @eastern-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media @mobile {
+    width: 100%;
+  }
+}
+// home
