@@ -361,16 +361,16 @@ img {
 }
 button {
   background-color: #17A2B8;
-  width: 80%;
-  font-size: 1.6rem;
   color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  padding: 1rem;
-  border-radius: 1.5rem;
   border: 0.2rem solid #17A2B8;
+  font-family: 'roboto';
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
 }
 @media (max-width: 550px) {
   button {

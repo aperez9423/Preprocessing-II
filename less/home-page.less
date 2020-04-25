@@ -123,17 +123,14 @@
 }
 
 button {
-  background-color: @button-bg;
-  width: 80%;
-  font-size: 1.6rem;
-  color: @white;
-  font-family: 'Roboto', sans-serif;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  border: .2rem solid @eastern-blue;
+  .button (@button-bg, @white, .2rem solid @eastern-blue, 'roboto');
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
 
   @media @mobile {
     width: 100%;
