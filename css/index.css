@@ -431,3 +431,32 @@ button {
     width: 100%;
   }
 }
+.form {
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 2rem;
+  margin: 2rem;
+  font-size: 1.6rem;
+}
+.form input[type=text],
+.form select,
+.form textarea {
+  width: 50%;
+  padding: 12px;
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+.form label {
+  padding: 2rem, 2rem, 2rem, 2rem;
+  display: inline-block;
+}
+.form input[type=submit] {
+  background-color: #17A2B8;
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+}
